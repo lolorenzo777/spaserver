@@ -1,0 +1,13 @@
+## Copyright 2022 by lolorenzo77. All rights reserved.
+## Use of this source code is governed by MIT licence that can be found in the LICENSE file.
+
+# dev environement configration
+
+# SPA main direcory
+spafiledir = "./webapp" # the dir where are located the files to serve
+
+# HTTP configuration
+http_port = ":5500"        # the spa server port
+http_rwTimeout = 15        # Read and Write http timeout, in second
+http_idleTimeout = 20      # Idle http timeout, in second
+http_cache-control = false # Http Cache Controle, usually false to disable cache in dev environment

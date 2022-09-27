@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- index.html template provided by lolorenzo777@sunraylab.net -->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="lolorenzo777">
-    <title>SPA App</title>
+    <title>SPA App Template</title>
 
     <!-- Bootstrap core CSS & icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
-
     <!-- Custom styles -->
-    <link rel="stylesheet" href="./css/spa.css">
+    <link rel="stylesheet" href="./spa.css">
 </head>
 
 <body id="body">
-    <h1>SPA App</h1>
+    <div class="container mt-3">
+        <h1>SPA App Template</h1>
+        <div class="lead" id="welcome"></div>
+        <div class="my-2">
+            <button id="btncallapi" type="button" class="btn btn-primary my-2">Call Server API /api/health</button>
+        </div>
+        <div id="msgcallapi" class="alert my-2 alert-primary d-none" role="alert">
+            click on the button to see the message
+        </div>
+        <div id="servermessage" class="display-3 my-2">
+        </div>
+    </div>
 
-
-    <!-- add this two lines if you want a webassembly application -->
-    <!-- and add the main.wasm code into the SPA file path-->
-    <!-- script src="wasm_exec.js"></script -->
-    <!-- script src="myapp.js"></script -->
+    <!-- remove this two lines if you don't want a webassembly application -->
+    <!-- and remove the main.wasm code into the SPA file path-->
+    <script src="wasm_exec.js"></script>
+    <script src="myapp.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
